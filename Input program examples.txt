@@ -1,0 +1,30 @@
+This file contains some program example that can be used to test MInt.
+
+1) Factorial (in this example of 5, can be changed in whatever number)
+
+n=5;fact=1;while (n>0) do fact=fact*n;n=n-1;end;
+
+e.g. For n = 3 , Fact = 6
+     For n = 4 , Fact = 24
+     For n = 5 , Fact = 120
+
+2) Fibonacci
+
+n=5;if (n<2) then fibo=n;else fibo=1;fiboPrev=1;i=2;while (i<n) do temp=fibo;fibo=fibo+fiboPrev;fiboPrev=temp;i=i+1;end;endif;
+
+e.g. For n = 5 , Fibo = 5
+     For n = 6 , Fibo = 8
+     For n = 7 , Fibo = 13
+     For n = 8 , Fibo = 21
+     
+3) Sum of the elements of an Array (given the length)
+
+n=3;x={5,7,8};i=0;sum=0;while (i<n) do sum=sum+x{i};i=i+1;end;
+
+In this case sum = 5 + 7 + 8 = 20.
+
+4) Find the maximum number of an Array (given the length)
+
+n=5;max=0;x={4,7,10,2,5};i=0;while (i<n) do if (x{i}>max) then max=x{i};else skip;endif;i=i+1;end;
+
+In this case, max = 10.
